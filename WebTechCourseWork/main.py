@@ -13,3 +13,7 @@ def GeneralInfo():
 @app.route("/Notes")
 def Notes():
     return render_template('Notes.html')
+
+@app.route("/Leaderboard")
+def Leaderboard():
+    return render_template('Leaderboard.html')

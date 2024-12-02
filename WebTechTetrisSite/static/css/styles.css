@@ -1,0 +1,90 @@
+body{
+    background-color: #3f3f3f;
+}
+
+.container{
+    color: #ffffff;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.FilterButtons{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+h1, h3 {
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+p1,p2,p3 {
+    color: white;
+    text-align: center;
+    padding-left: 40px;
+}
+
+.button {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  color:white;
+  border-color: white;
+}
+
+.LeaderboardButtons {
+ margin: auto;
+ display: inline-block;
+ left: 50%;
+ right: 50%;
+ background-color: #72cb3b;
+
+ }
+
+.GeneralInfo{
+background-color: #0241ae;
+align: center;
+}
+
+.Leaderboard{
+background-color: #72cb3b;
+
+}
+
+.Notes{
+background-color: #fd981c;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.center
+{
+margin-left: auto;
+margin-right: auto;
+}
+
+tr:nth-child(odd) { /* This line here makes table rows be the below colour for every odd row. */
+  background-color: #D6EEEE;
+}
+
+tr:nth-child(even) { /* This line here makes table rows be the below colour for every even row. */
+  background-color: #eed6d6;
+}
+

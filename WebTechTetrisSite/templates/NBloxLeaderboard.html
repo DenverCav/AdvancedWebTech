@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <link rel="stylesheet" href="{{ url_for('static', filename= 'css/styles.css') }}">
+    <title>N-Blox Leaderboard</title>
+</head>
+<body>
+<style>
+    table td,
+    table th {
+        font-size: smaller;
+        border: 1px solid black;
+        line-height: 1.4;
+        padding: 10px 10px;
+    }
+</style>
+
+<h1>N-Blox Leaderboard</h1>
+    <hr>
+    <hr>
+
+<table class="center">
+    <thead>
+        <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+        <tbody>
+        {% for entry in data %}
+        <tr>
+            <td> {{ entry.Place }} </td>
+            <td> {{ entry.Name }} </td>
+            <td> {{ entry.Score }} </td>
+        </tr>
+        {% endfor %} <!-- This rubbish decided to break on me in the site because the %'s weren't right beside the brackets. Why? Why do I even need to wonder this... -->
+        </tbody>
+</table>
+    <hr>
+    <hr>
+
+ <div class="LeaderboardButton">
+
+     <a href = "/">
+            <button type="button" class ="LeaderboardButtons">Home Page</button>
+     </a>
+
+     <br>
+
+      <a href = "/TunedLeaderboard">
+            <button type="button" class ="LeaderboardButtons">Tuned Leaderboard</button>
+        </a>
+
+        <br>
+
+        <a href = "/MindBenderLeaderboard">
+            <button type="button" class ="LeaderboardButtons">Mind Bender Leaderboard</button>
+        </a>
+
+        <br>
+
+        <a href = "/E60Leaderboard">
+            <button type="button" class ="LeaderboardButtons">E60 Leaderboard</button>
+        </a>
+
+        <br>
+
+        <a href = "/Untuned">
+            <button type="button" class ="LeaderboardButtons">Untuned Leaderboard</button>
+        </a>
+    </div>
+</body>
+</html>

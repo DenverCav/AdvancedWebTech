@@ -1,1 +1,1 @@
-This is the source code for a project I am creating for Advanced Web Technologies. The site is meant to be used by the Web Tetris community for their community leaderboard, as opposed to the current Google Sheets leaderboard that is in use. This is stil a WIP.
+This is the source code for a project I am creating for Advanced Web Technologies. The site is meant to be used by the Web Tetris community for their community leaderboard, as opposed to the current Google Sheets leaderboard that is in use. This is still a WIP.

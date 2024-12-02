@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <link rel="stylesheet" href="{{ url_for('static', filename= 'css/styles.css') }}">
+    <title>Leaderboard</title>
+</head>
+<body>
+<style>
+    table td,
+    table th {
+        font-size: smaller;
+        border: 1px solid black;
+        line-height: 1.4;
+        padding: 10px 10px;
+    }
+</style>
+
+<h1>Untuned Leaderboard with Scores greater than 2m and less than 3m</h1>
+    <hr>
+    <hr>
+
+<table class="center">
+    <thead>
+        <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+        <tbody>
+        {% for entry in data %}
+        <tr>
+            <td> {{ entry.Place }} </td>
+            <td> {{ entry.Name }} </td>
+            <td> {{ entry.Score }} </td>
+        </tr>
+        {% endfor %} <!-- This rubbish decided to break on me in the site because the %'s weren't right beside the brackets. Why? Why do I even need to wonder this... -->
+        </tbody>
+</table>
+    <hr>
+    <h3>Score Filters</h3>
+ <div class="FilterButtons">
+
+     <a href = "/Leaderboard">
+            <button type="button" class ="LeaderboardButtons">All Scores</button>
+     </a>
+
+     <a href = "/Leaderboard15m">
+            <button type="button" class ="LeaderboardButtons">Greater than 1.5m, Less than 2m</button>
+     </a>
+
+     <a href = "/Leaderboard2m">
+            <button type="button" class ="LeaderboardButtons">Greater than 2m, Less than 3m</button>
+     </a>
+
+     <a href = "/Leaderboard3m">
+            <button type="button" class ="LeaderboardButtons">Greater than 3m</button>
+     </a>
+ </div>
+    <hr>
+
+ <div class="LeaderboardButton">
+
+
+      <a href = "/">
+            <button type="button" class ="LeaderboardButtons">Home Page</button>
+     </a>
+
+     <br>
+
+
+      <a href = "/TunedLeaderboard">
+            <button type="button" class ="LeaderboardButtons">Tuned Leaderboard</button>
+        </a>
+
+        <br>
+
+        <a href = "/MindBenderLeaderboard">
+            <button type="button" class ="LeaderboardButtons">Mind Bender Leaderboard</button>
+        </a>
+
+        <br>
+
+        <a href = "/E60Leaderboard">
+            <button type="button" class ="LeaderboardButtons">E60 Leaderboard</button>
+        </a>
+
+        <br>
+
+        <a href = "/NBloxLeaderboard">
+            <button type="button" class ="LeaderboardButtons">N-Blox Leaderboard</button>
+        </a>
+    </div>
+</body>
+</html>

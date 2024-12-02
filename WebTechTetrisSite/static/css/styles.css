@@ -42,11 +42,9 @@ p1,p2,p3 {
   border-color: white;
 }
 
-.LeaderboardButtons {
- margin: auto;
- display: inline-block;
- left: 50%;
- right: 50%;
+.LeaderboardButtons, .LeaderboardButton {
+ display: flex;
+ justify-content: space-between;
  background-color: #72cb3b;
 
  }
